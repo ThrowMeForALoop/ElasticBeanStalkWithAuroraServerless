@@ -1,0 +1,13 @@
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\BeanstalkNet.exe
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\appsettings.Development.json
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\appsettings.json
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\appsettings.Production.json
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\BeanstalkNet.dll
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\BeanstalkNet.runtimeconfig.json
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\BeanstalkNet.pdb
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\Microsoft.EntityFrameworkCore.dll
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\Npgsql.dll
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\tung.nguyen\OneDrive - Fugro\Desktop\Projects\BeanstalkNet\Site\BeanstalkNet.deps.json

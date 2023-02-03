@@ -1,0 +1,85 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/cicd.ts",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
+      "package*.json",
+      "yarn.lock",
+      "node_modules",
+      "test"
+    ]
+  },
+  "context": {
+    "configuration": {
+      "instanceType": "t2.medium",
+      "applicationName": "TungNguyenPlayground",
+      "vpcName": "MyVPC",
+      "vpcCidr": "10.0.0.0/16",
+      "loadbalancerInboundCIDR": "0.0.0.0/0",
+      "loadbalancerOutboundCIDR": "0.0.0.0/0",
+      "webserverOutboundCIDR": "0.0.0.0/0",
+      "zipFileName": "deploy_bundle.zip",
+      "solutionStackName": "64bit Amazon Linux 2 v2.4.3 running .NET Core",
+      "managedActionsEnabled": "true",
+      "updateLevel": "minor",
+      "preferredUpdateStartTime": "Sun:01:00",
+      "streamLogs": "true",
+      "deleteLogsOnTerminate": "false",
+      "logRetentionDays": "7",
+      "loadBalancerType": "application",
+      "lbHTTPSEnabled": false,
+      "lbHTTPSCertificateArn": "",
+      "lbSSLPolicy": null,
+      "databaseSettings": {
+        "dbName": "databasename",
+        "dbAdminUsername": "admin",
+        "dbWebUsername": "dbwebuser",
+        "dbStorageGB": 100,
+        "dbMaxStorageGiB": 200,
+        "dbMultiAZ": true,
+        "dbBackupRetentionDays": 7,
+        "dbDeleteAutomatedBackups": true,
+        "dbPreferredBackupWindow": "01:00-01:30",
+        "dbCloudwatchLogsExports": [
+          "audit",
+          "error",
+          "general",
+          "slowquery"
+        ],
+        "dbIamAuthentication": true,
+        "dbInstanceType": "t2.small",
+        "dbRetentionPolicy": "destroy"
+      }
+    },
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/core:target-partitions": [
+      "aws",
+      "aws-cn"
+    ],
+    "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": true,
+    "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": true,
+    "@aws-cdk/aws-ecs:arnFormatIncludesClusterName": true,
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/core:validateSnapshotRemovalPolicy": true,
+    "@aws-cdk/aws-codepipeline:crossAccountKeyAliasStackSafeResourceName": true,
+    "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true,
+    "@aws-cdk/aws-sns-subscriptions:restrictSqsDescryption": true,
+    "@aws-cdk/aws-apigateway:disableCloudWatchRole": true,
+    "@aws-cdk/core:enablePartitionLiterals": true,
+    "@aws-cdk/aws-events:eventsTargetQueueSameAccount": true,
+    "@aws-cdk/aws-iam:standardizedServicePrincipals": true,
+    "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": true,
+    "@aws-cdk/aws-iam:importedRoleStackSafeDefaultPolicyName": true,
+    "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": true,
+    "@aws-cdk/aws-route53-patters:useCertificate": true,
+    "@aws-cdk/customresources:installLatestAwsSdkDefault": false
+  }
+}
